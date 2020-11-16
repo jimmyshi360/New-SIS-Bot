@@ -7,7 +7,7 @@ I just updated this since nkrishn9 has since graduated.
 
 ### UPDATE: Make sure you have the most updated version of Selenium: ###
 ```
-pip install -U selenium
+pip3 install -U selenium
 ```
 
 This selenium bot allows you to register for classes on the Johns Hopkins SIS portal right at 7:00 AM, virtually guaranteeing a spot in all of your classes. 
@@ -18,12 +18,15 @@ This selenium bot allows you to register for classes on the Johns Hopkins SIS po
 
 
 ## Setup Instructions ##
+
+Note that this new version of SIS bot for Spring 2021 only works with python3 on MacOS.
+
 First, make sure all of the classes you want to register for are in your cart on SIS.
 
 ```
 git clone https://github.com/yzhan289/New-SIS-Bot
 cd New-SIS-Bot
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 brew install chromedriver
 ```
 
@@ -40,7 +43,7 @@ SIS uses the naval observatory clock to determine time. Therefore, your system m
 ## Running Instructions ##
 Begin running at least a minute before 7:00 AM. The program will wait/keep running until 7:00 AM to register you for your classes. 
 ```
-python bot.py SIS_Username SIS_Password
+python3 bot.py SIS_Username SIS_Password
 ```
 
 That's all you need to do! The bot will open a new window and sign in to your SIS account. At 7am it will click register to make sure you get the classes you want!
