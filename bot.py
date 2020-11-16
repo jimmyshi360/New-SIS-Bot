@@ -45,21 +45,6 @@ password = browser.find_element_by_name('passwd')
 password.send_keys(passwordStr)
 
 WebDriverWait(browser, 10)
-
-#ignored_exceptions=(NoSuchElementException,StaleElementReferenceException,)
-#submit2button = WebDriverWait(browser, 20,ignored_exceptions=ignored_exceptions).until(EC.presence_of_element_located((By.ID, "idSIButton9")))
-#submit2button.click()
-'''
-def find(driver):
-    element = browser.find_elements_by_class_name("button ext-button primary ext-primary")[0]
-    if element:
-        return element
-    else:
-        return False
-submit2button = WebDriverWait(browser, 20).until(find)
-submit2button.click()
-'''
-
 staleElement = True; 
 
 while staleElement:
